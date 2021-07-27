@@ -16,3 +16,9 @@
 # Add a feed source
 #echo 'src-git helloworld https://github.com/fw876/helloworld' >>feeds.conf.default
 #echo 'src-git passwall https://github.com/xiaorouji/openwrt-passwall' >>feeds.conf.default
+
+#Clone lua-maxminddb 依赖 & VSSR
+git clone https://github.com/jerrykuku/lua-maxminddb /package/lua-maxminddb
+git clone https://github.com/jerrykuku/luci-app-vssr /package/vssr
+#Clone OpenAppFilter source code
+git clone https://github.com/destan19/OpenAppFilter package/OpenAppFilter

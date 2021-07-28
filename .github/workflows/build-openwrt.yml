@@ -18,6 +18,16 @@ on:
         description: 'SSH connection to Actions'
         required: true
         default: 'false'
+  push:
+    branches:
+      - master
+    paths:
+      - 'G-Dock.config'  
+  schedule:
+#    - cron: 0 8 * * 0
+    - cron: 0 8 * * 3
+  watch:
+    types: started 
 
 env:
   REPO_URL: https://github.com/coolsnowwolf/lede
